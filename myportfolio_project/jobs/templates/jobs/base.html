@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% load static %}
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-green-100 container mx-auto px-6 md:px-32 antialiased" >
+<body class="bg-white  antialiased" >
 
 
 <!-- navbar area -->
-<nav class="text-gray-700 pt-12" role="navigation">
+<div class="border-b border-gray-700 bg-gray-100 shadow">
+<nav class="text-gray-700 py-4 container mx-auto px-6 md:px-32" role="navigation">
   <div class="flex flex-wrap items-center md:flex-no-wrap">
     <div class="mr-4 md:mr-8 flex-row">
       <a href="{% url 'jobs' %}" rel="home">
@@ -31,14 +33,14 @@
           <a class="block px-4 py-1 md:p-2 lg:px-4" href="#" title="Link">Git</a>
         </li>
         <li>
-          <a class="block px-4 py-1 md:p-2 lg:px-4 " href="#" title="Active Link">LinkedIn</a>
+          <a class="block pl-4 py-1 md:p-2 lg:pl-4 " href="#" title="Active Link">LinkedIn</a>
         </li>
 
       </ul>
     </div>
   </div>
 </nav>
-
+</div>
 
 
 {% block content%}
